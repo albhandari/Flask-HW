@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>All The Cities In The Database</h3>
+{% for city in allCity %}
+    <ul>
+        <li>{{ city }}</li>
+    </ul>
+
+{% endfor %}
+
+{% endblock %}

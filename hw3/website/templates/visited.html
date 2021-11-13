@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Here are the visited Cities</h3>
+{% for city in visitedCity %}
+    <ul>
+        <li>{{ city }}</li>
+    </ul>
+
+{% endfor %}
+
+{% endblock %}

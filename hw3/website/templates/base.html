@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+
+    <body>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <h4>{{ message }}</h4>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <h1>Welcome Alex, here are the top destinations!</h1>
+        <strong><a href = "/">Home</a></strong>    
+        <strong><a href = "https://ww.google.com">goooogle</a></strong>
+        <strong><a href = "/all">All Cities</a></strong>     
+        <strong><a href = "/visited">Visited Cities</a></strong>
+        
+        
+        <div>
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
